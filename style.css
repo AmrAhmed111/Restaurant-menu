@@ -635,7 +635,7 @@ footer .phone_num {
     }
 
     .navbar-toggler {
-        background-color: white;
+        background-color: var(--main-color);
     }
 
     .hero {
