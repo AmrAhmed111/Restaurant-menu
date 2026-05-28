@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- start Navbar -->
+    <nav class="navbar navbar-expand-lg shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Foodie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="">الرئيسة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#menu">المنيو</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#features">المميزات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#contact">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>
+                استمتع بأفضل <span>تجربة طعام</span>
+            </h1>
+            <p>
+                من أول نظرة إلى آخر لقمة… استمتع بتجربة طعام تأسر الحواس.
+            </p>
+            <div class="hero-btns">
+                <a href="#menu" class="main-btn btn-primary-custom">
+                    <i class="fa-solid fa-utensils"></i>
+                    استعرض المنيو
+                </a>
+
+                <a href="#features" class="main-btn btn-outline-custom">
+                    <i class="fa-solid fa-star"></i>
+                    المميزات
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Start Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>قائمة الطعام</h2>
+                <p>
+                    لأن لكل وجبة قصة… اختر طبقك واستمتع بتجربة مليئة بالنكهة والتميز.
+                </p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="burger">برجر</button>
+                <button class="filter-btn" data-filter="pizza">بيتزا</button>
+                <button class="filter-btn" data-filter="drinks">مشروبات</button>
+            </div>
+
+            <div class="row g-4" id="menu-items">
+                <!-- Item -->
+                <div class="col-lg-4 col-md-6 menu-item burger">
+                    <div class="menu-card">
+                        <span class="badge-custom">الأكثر طلباً</span>
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop" alt="Burger">
+
+                        <div class="menu-content">
+                            <div class="menu-top">
+                                <h4>برجر لحم مدخن</h4>
+                                <span class="price">150 جنيه</span>
+                            </div>
+                            <p>
+                                برجر لحم بقري طازج مع صوص خاص وجبن شيدر وخضروات طازجة بطعم لا يُقاوم.
+                            </p>
+                            <div class="menu-footer">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <button class="order-btn">اطلب الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-4 col-md-6 menu-item pizza">
+                    <div class="menu-card">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Pizza">
+
+                        <div class="menu-content">
+                            <div class="menu-top">
+                                <h4>بيتزا إيطالية</h4>
+                                <span class="price">210 جنيه</span>
+                            </div>
+                            <p>
+                                بيتزا مخبوزة على الطريقة الإيطالية مع جبن موزاريلا وصوص طماطم غني بالمذاق.
+                            </p>
+                            <div class="menu-footer">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <button class="order-btn">اطلب الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-4 col-md-6 menu-item drinks">
+                    <div class="menu-card">
+                        <span class="badge-custom">جديد</span>
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=1200&auto=format&fit=crop" alt="Drink">
+
+                        <div class="menu-content">
+                            <div class="menu-top">
+                                <h4>موهيتو فريش</h4>
+                                <span class="price">80 جنيه</span>
+                            </div>
+                            <p>
+                                مشروب منعش بالليمون والنعناع الطازج مع ثلج مجروش يمنحك انتعاشاً رائعاً.
+                            </p>
+                            <div class="menu-footer">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <button class="order-btn">اطلب الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Menu Section -->
+
+    <!-- Start Feature Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>مميزات مطعمنا</h2>
+                <p>
+                    نقدم تجربة طعام متكاملة تجمع بين جودة الأطباق، سرعة الخدمة، والأجواء العصرية لنمنح عملاءنا تجربة استثنائية لا تُنسى.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box">
+                        <div class="light"></div>
+                        <i class="fa-solid fa-bowl-food"></i>
+                        <h4>جودة المكونات</h4>
+                        <p>
+                            نستخدم أجود المكونات الطازجة بعناية لضمان تقديم أطباق غنية بالنكهة والجودة التي يستحقها عملاؤنا في كل وجبة.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box">
+                        <div class="light"></div>
+                        <i class="fa-solid fa-headset"></i>
+                        <h4>خدمة سريعة واحترافية</h4>
+                        <p>
+                            فريقنا مدرّب على تقديم تجربة مميزة بسرعة واحترافية لضمان راحة العملاء والاستمتاع بوقت رائع داخل المطعم.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mx-md-auto">
+                    <div class="feature-box">
+                        <div class="light"></div>
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                        <h4>أجواء عصرية ومريحة</h4>
+                        <p>
+                            يوفر المطعم أجواء حديثة وتصميماً مريحاً يمنح الزوار تجربة استثنائية تجمع بين الراحة والاستمتاع بالطعام.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Feature Section -->
+
+    <!-- Start Contact Section -->
+    <section class="contact-section py-5" id="contact">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="section-title text-center mb-5">
+                <h2>تواصل معنا</h2>
+                <p>
+                    نحن هنا للإجابة على جميع استفساراتك ومساعدتك في حجز أفضل تجربة طعام داخل مطعمنا.
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-center">
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <div class="contact-info p-4 rounded-4 h-100">
+                        <div class="d-flex align-items-start gap-3 mb-4">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-2">العنوان</h5>
+                                <p class="mb-0 text-light-emphasis">
+                                    طنطا - شارع البحر - أمام الجامعة
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3 mb-4">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-2">رقم الهاتف</h5>
+                                <p class="mb-0 text-light-emphasis">
+                                    01012345678
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3 mb-4">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-2">البريد الإلكتروني</h5>
+                                <p class="mb-0 text-light-emphasis">
+                                    info@foodie.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-2">مواعيد العمل</h5>
+                                <p class="mb-0 text-light-emphasis">
+                                    يومياً من 10 صباحاً حتى 2 بعد منتصف الليل
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form p-4 rounded-4">
+                        <form>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control custom-input" placeholder="الاسم بالكامل">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control custom-input" placeholder="البريد الإلكتروني">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control custom-input" placeholder="عنوان الرسالة">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control custom-input" rows="6" placeholder="اكتب رسالتك هنا..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="contact-btn">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                        إرسال الرسالة
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Start Footer -->
+    <footer id="contact" class="pt-5">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="mb-4 text-warning fw-bold">Foodie</h4>
+
+                    <p class="text-light-emphasis lh-lg mb-2">
+                        نقدم أشهى الأطباق بأفضل جودة وخدمة مميزة لنمنحك تجربة طعام لا تُنسى.
+                    </p>
+
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <i class="fa-solid fa-location-dot text-warning fs-5"></i>
+                        <span>طنطا - شارع البحر - أمام الجامعة</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <i class="fa-solid fa-phone text-warning fs-5 phone_num"></i>
+                        <span>01012345678</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-envelope text-warning fs-5"></i>
+                        <span>info@foodie.com</span>
+                    </div>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4 text-warning">روابط سريعة</h5>
+
+                    <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li><a href="" class="text-decoration-none text-white">الرئيسية</a></li>
+                        <li><a href="#menu" class="text-decoration-none text-white">المنيو</a></li>
+                        <li><a href="#features" class="text-decoration-none text-white">المميزات</a></li>
+                        <li><a href="#contact" class="text-decoration-none text-white">تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- الخريطة -->
+                <div class="col-lg-6">
+                    <h5 class="mb-4 text-warning">موقعنا على الخريطة</h5>
+
+                    <div class="rounded-4 overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.326636728507!2d31.00394057552662!3d30.78650998330627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c8d5e8d6d1b5%3A0x8d1b92e5b1f0c0e7!2sTanta!5e0!3m2!1sen!2seg!4v1716730000000!5m2!1sen!2seg"
+                            width="100%"
+                            height="250"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-top border-secondary mt-5 pt-4 text-center">
+                <p class="mb-0">
+                    © 2026 جميع الحقوق محفوظة | <span class="fw-bold text-warning">Foodie</span>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
