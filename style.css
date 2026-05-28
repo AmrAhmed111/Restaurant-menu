@@ -620,36 +620,6 @@ footer .phone_num {
     transform: rotate(250deg) !important;
 }
 
-/* End Feature Section */
-/* @media(max-width: 991px) {
-    .hero h1 {
-    font-size: 50px;
-    }
-}
-
-@media(max-width: 767px) {
-    .hero {
-    min-height: auto;
-    padding: 150px 0 80px;
-    }
-
-    .hero h1 {
-    font-size: 38px;
-    }
-
-    .hero p {
-    font-size: 16px;
-    }
-
-    .section-title h2 {
-    font-size: 32px;
-    }
-
-    .menu-top h4 {
-    font-size: 20px;
-    }
-} */
-
 /* =========================
     Responsive Design
 ========================= */
@@ -687,9 +657,21 @@ footer .phone_num {
 
     .filter-buttons {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
         gap: 15px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 10px;
+        scrollbar-width: none;
+    }
+
+    .filter-buttons::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        flex: 0 0 auto;
     }
 
     .menu-card img {
@@ -702,7 +684,6 @@ footer .phone_num {
 }
 
 @media (max-width: 767px) {
-
     .container {
         padding-right: 18px;
         padding-left: 18px;
@@ -744,10 +725,6 @@ footer .phone_num {
 
     .filter-buttons {
         gap: 10px;
-    }
-
-    .filter-btn {
-        width: 100%;
     }
 
     .menu-top {
@@ -810,14 +787,13 @@ footer .phone_num {
 }
 
 @media (max-width: 480px) {
-
     .hero h1 {
         font-size: 28px;
     }
 
     .main-btn {
         padding: 13px 20px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .menu-card img {
