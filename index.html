@@ -78,92 +78,259 @@
                 <button class="filter-btn active" data-filter="all">الكل</button>
                 <button class="filter-btn" data-filter="burger">برجر</button>
                 <button class="filter-btn" data-filter="pizza">بيتزا</button>
+                <button class="filter-btn" data-filter="sandwiches">ساندوتشات</button>
+                <button class="filter-btn" data-filter="chicken">فراخ</button>
+                <button class="filter-btn" data-filter="grill">مشويات</button>
+                <button class="filter-btn" data-filter="seafood">مأكولات بحرية</button>
+                <button class="filter-btn" data-filter="pasta">مكرونة</button>
+                <button class="filter-btn" data-filter="salads">سلطات</button>
+                <button class="filter-btn" data-filter="appetizers">مقبلات</button>
+                <button class="filter-btn" data-filter="desserts">حلويات</button>
                 <button class="filter-btn" data-filter="drinks">مشروبات</button>
+                <button class="filter-btn" data-filter="hot-drinks">مشروبات ساخنة</button>
             </div>
 
             <div class="row g-4" id="menu-items">
-                <!-- Item -->
-                <div class="col-lg-4 col-md-6 menu-item burger">
-                    <div class="menu-card">
-                        <span class="badge-custom">الأكثر طلباً</span>
-                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop" alt="Burger">
-
-                        <div class="menu-content">
-                            <div class="menu-top">
-                                <h4>برجر لحم مدخن</h4>
-                                <span class="price">150 جنيه</span>
-                            </div>
-                            <p>
-                                برجر لحم بقري طازج مع صوص خاص وجبن شيدر وخضروات طازجة بطعم لا يُقاوم.
-                            </p>
-                            <div class="menu-footer">
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <button class="order-btn">اطلب الآن</button>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Burger -->
+<div class="col-lg-4 col-md-6 menu-item burger">
+    <div class="menu-card">
+        <span class="badge-custom">الأكثر طلباً</span>
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop" alt="Burger">
+        <div class="menu-content">
+            <div class="menu-top">
+                <h4>دبل تشيز برجر</h4>
+                <span class="price">185 جنيه</span>
+            </div>
+            <p>قطعتان من اللحم البقري المشوي مع جبنة شيدر وصوص برجر خاص وخس طازج.</p>
+            <div class="menu-footer">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
+                <button class="order-btn">اطلب الآن</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <!-- Item -->
-                <div class="col-lg-4 col-md-6 menu-item pizza">
-                    <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Pizza">
-
-                        <div class="menu-content">
-                            <div class="menu-top">
-                                <h4>بيتزا إيطالية</h4>
-                                <span class="price">210 جنيه</span>
-                            </div>
-                            <p>
-                                بيتزا مخبوزة على الطريقة الإيطالية مع جبن موزاريلا وصوص طماطم غني بالمذاق.
-                            </p>
-                            <div class="menu-footer">
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <button class="order-btn">اطلب الآن</button>
-                            </div>
-                        </div>
-                    </div>
+<!-- Pizza -->
+<div class="col-lg-4 col-md-6 menu-item pizza">
+    <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Pizza">
+        <div class="menu-content">
+            <div class="menu-top">
+                <h4>بيتزا بيبروني</h4>
+                <span class="price">240 جنيه</span>
+            </div>
+            <p>بيتزا إيطالية بجبنة الموزاريلا وشرائح البيبروني وصوص الطماطم الأصلي.</p>
+            <div class="menu-footer">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
                 </div>
+                <button class="order-btn">اطلب الآن</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <!-- Item -->
-                <div class="col-lg-4 col-md-6 menu-item drinks">
-                    <div class="menu-card">
-                        <span class="badge-custom">جديد</span>
-                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=1200&auto=format&fit=crop" alt="Drink">
-
-                        <div class="menu-content">
-                            <div class="menu-top">
-                                <h4>موهيتو فريش</h4>
-                                <span class="price">80 جنيه</span>
-                            </div>
-                            <p>
-                                مشروب منعش بالليمون والنعناع الطازج مع ثلج مجروش يمنحك انتعاشاً رائعاً.
-                            </p>
-                            <div class="menu-footer">
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                </div>
-                                <button class="order-btn">اطلب الآن</button>
-                            </div>
-                        </div>
-                    </div>
+<!-- Sandwiches -->
+<div class="col-lg-4 col-md-6 menu-item sandwiches">
+    <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=1200&auto=format&fit=crop" alt="Sandwich">
+        <div class="menu-content">
+            <div class="menu-top">
+                <h4>ساندوتش شاورما فراخ</h4>
+                <span class="price">110 جنيه</span>
+            </div>
+            <p>شرائح دجاج متبلة ومشوية مع ثومية ومخلل وخضروات طازجة.</p>
+            <div class="menu-footer">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
                 </div>
+                <button class="order-btn">اطلب الآن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chicken -->
+<div class="col-lg-4 col-md-6 menu-item chicken">
+    <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?q=80&w=1200&auto=format&fit=crop" alt="Chicken">
+        <div class="menu-content">
+            <div class="menu-top">
+                <h4>تشيكن كريسبي</h4>
+                <span class="price">170 جنيه</span>
+            </div>
+            <p>قطع دجاج مقرمشة ذهبية تقدم مع البطاطس وصوص الرانش.</p>
+            <div class="menu-footer">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <button class="order-btn">اطلب الآن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Grill -->
+<div class="col-lg-4 col-md-6 menu-item grill">
+    <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" alt="Grill">
+        <div class="menu-content">
+            <div class="menu-top">
+                <h4>ميكس جريل</h4>
+                <span class="price">320 جنيه</span>
+            </div>
+            <p>تشكيلة من الكباب والكفتة والشيش طاووق مع الأرز والسلطات.</p>
+            <div class="menu-footer">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <button class="order-btn">اطلب الآن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Seafood -->
+<div class="col-lg-4 col-md-6 menu-item seafood">
+    <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop" alt="Seafood">
+        <div class="menu-content">
+            <div class="menu-top">
+                <h4>جمبري مشوي</h4>
+                <span class="price">390 جنيه</span>
+            </div>
+            <p>جمبري طازج متبل بالأعشاب والثوم ومشوي على الفحم.</p>
+            <div class="menu-footer">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <button class="order-btn">اطلب الآن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pasta -->
+<div class="col-lg-4 col-md-6 menu-item pasta">
+    <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=1200&auto=format&fit=crop" alt="Pasta">
+        <div class="menu-content">
+            <div class="menu-top">
+                <h4>باستا ألفريدو</h4>
+                <span class="price">220 جنيه</span>
+            </div>
+            <p>مكرونة فيتوتشيني بصلصة الكريمة والدجاج المشوي وجبن البارميزان.</p>
+            <div class="menu-footer">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <button class="order-btn">اطلب الآن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Salads -->
+<div class="col-lg-4 col-md-6 menu-item salads">
+    <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?q=80&w=1200&auto=format&fit=crop" alt="Salad">
+        <div class="menu-content">
+            <div class="menu-top">
+                <h4>سيزر سلاد</h4>
+                <span class="price">95 جنيه</span>
+            </div>
+            <p>خس طازج مع دجاج مشوي وجبن بارميزان وصوص سيزر الكلاسيكي.</p>
+            <div class="menu-footer">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <button class="order-btn">اطلب الآن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Appetizers -->
+<div class="col-lg-4 col-md-6 menu-item appetizers">
+    <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?q=80&w=1200&auto=format&fit=crop" alt="Fries">
+        <div class="menu-content">
+            <div class="menu-top">
+                <h4>بطاطس ودجز</h4>
+                <span class="price">70 جنيه</span>
+            </div>
+            <p>بطاطس متبلة ومقرمشة تقدم مع صوص الجبن أو الباربكيو.</p>
+            <div class="menu-footer">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <button class="order-btn">اطلب الآن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Desserts -->
+<div class="col-lg-4 col-md-6 menu-item desserts">
+    <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1200&auto=format&fit=crop" alt="Dessert">
+        <div class="menu-content">
+            <div class="menu-top">
+                <h4>تشيز كيك فراولة</h4>
+                <span class="price">120 جنيه</span>
+            </div>
+            <p>تشيز كيك كريمي بطبقة فراولة طبيعية وبسكويت مقرمش.</p>
+            <div class="menu-footer">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <button class="order-btn">اطلب الآن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Drinks -->
+<div class="col-lg-4 col-md-6 menu-item drinks">
+    <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=1200&auto=format&fit=crop" alt="Drink">
+        <div class="menu-content">
+            <div class="menu-top">
+                <h4>موهيتو بلو</h4>
+                <span class="price">85 جنيه</span>
+            </div>
+            <p>مشروب غازي منعش بالليمون والنعناع مع نكهة التوت الأزرق.</p>
+            <div class="menu-footer">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <button class="order-btn">اطلب الآن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hot Drinks -->
+<div class="col-lg-4 col-md-6 menu-item hot-drinks">
+    <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" alt="Coffee">
+        <div class="menu-content">
+            <div class="menu-top">
+                <h4>كابتشينو إيطالي</h4>
+                <span class="price">75 جنيه</span>
+            </div>
+            <p>إسبريسو غني مع حليب مبخر ورغوة كريمية ناعمة.</p>
+            <div class="menu-footer">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <button class="order-btn">اطلب الآن</button>
+            </div>
+        </div>
+    </div>
+</div>
             </div>
         </div>
     </section>
@@ -338,7 +505,6 @@
                     </div>
                 </div>
 
-                <!-- روابط سريعة -->
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-4 text-warning">روابط سريعة</h5>
 
@@ -350,7 +516,6 @@
                     </ul>
                 </div>
 
-                <!-- الخريطة -->
                 <div class="col-lg-6">
                     <h5 class="mb-4 text-warning">موقعنا على الخريطة</h5>
 
@@ -365,7 +530,6 @@
                         </iframe>
                     </div>
                 </div>
-
             </div>
 
             <!-- Bottom Footer -->
